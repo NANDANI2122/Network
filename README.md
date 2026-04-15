@@ -164,9 +164,8 @@ Backend usually runs on:
 
 ## Notes
 
-<<<<<<< HEAD
 - Do not upload your real `.env` file to GitHub.
-=======
+
 >>>>>>> 27f1b605ddf35f36241ef78f95aa981e22fbfd7a
 - If notifications do not appear after backend changes, restart the backend server.
 
