@@ -106,8 +106,6 @@ Backend usually runs on:
 
 ## Notes
 
-- Do not upload your real `.env` file to GitHub.
-- `node_modules` should not be committed.
 - If notifications do not appear after backend changes, restart the backend server.
 
 ## Author
