@@ -7,10 +7,21 @@ NetMesh is a full-stack event networking app that helps users join a session, di
 - User registration and login
 - Session creation and joining
 - Interest-based recommendations
+- ML-assisted matching using profile embeddings and semantic similarity
 - In-app chat between connected users
 - Notification support for connect and message activity
 - Session timer with expiry handling
 
+## Recommendation Engine
+
+NetMesh does not rely only on direct interest overlap. The recommendation system also uses an ML-based semantic matching layer:
+
+- User bio and interests are converted into embeddings
+- Semantic similarity is calculated using cosine similarity
+- Interest overlap and semantic score are combined to rank users
+- Session goals such as networking, mentorship, or job opportunities can further influence ranking
+
+This helps the app recommend more relevant connections instead of matching only exact keyword overlaps.
 
 ## Screenshots
 
@@ -44,8 +55,6 @@ NetMesh is a full-stack event networking app that helps users join a session, di
 
 <img width="1886" height="736" alt="Chat in action" src="https://github.com/user-attachments/assets/66cd1f35-2136-4355-9c7c-088a92fe3a7a" />
 
-
-
 ## Project Structure
 
 ```text
@@ -60,6 +69,7 @@ Network/
 - Backend: Node.js, Express
 - Database: MongoDB
 - Authentication: JWT
+- ML/NLP: Embedding-based semantic matching
 
 ## Prerequisites
 
@@ -139,8 +149,9 @@ Backend usually runs on:
 - `npm run dev` - Start the backend with nodemon
 - `npm start` - Start the backend with node
 
-## Note
+## Notes
 
+- Do not upload your real `.env` file to GitHub.
 - If notifications do not appear after backend changes, restart the backend server.
 
 ## Author
